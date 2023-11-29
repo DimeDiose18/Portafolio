@@ -7,11 +7,22 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'black': '#1E1E1E',
+      'white': '#EEEEEE', 
+      'gray': '#9C9C9C',
+      'sky': '#B6EAFF',
+      'rosy': '#FD68C4',
+      'lilac': '#BE87F9',
+      'baby-blue': '#0DE2D8',
+      'mint': '#22FD81',
+      'yellow': '#F5FC72',
+      'orange': '#FF9D5A',
+      'pink': '#FC5A88'
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'pattern': "url('/portafolio/public/assets/images/papel.jpg')"
       },
     },
   },
