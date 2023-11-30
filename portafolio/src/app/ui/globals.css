@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  
+}
+
+@layer base {
+  .font-outline {
+    -webkit-text-stroke: 1px #FD68C4;
+  }
+  .font-outline-2 {
+    -webkit-text-stroke: 2px #1E1E1E;
+  }
+}
+
+body {
+ background-image: url('../../../public/assets/images/papel.jpg');
+}
