@@ -1,7 +1,7 @@
 import React from 'react'
 import { meowScript, ibmPlexMono } from '../fonts'
 
-const Title = () => {
+const Title: React.FC = () => {
   return (
     <div>
         <div>
