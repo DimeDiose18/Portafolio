@@ -4,4 +4,5 @@ export interface SVGProps {
     width?: number
     height?: number
     fill?: HexadecimalColor
+    className?: string
 }
