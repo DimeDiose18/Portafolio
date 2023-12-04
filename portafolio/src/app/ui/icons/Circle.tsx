@@ -1,7 +1,7 @@
 import React from 'react';
 import { SVGProps } from '../../lib/types/SvgTypes';
 
-const Circle: React.FC<SVGProps> = ({width=10, height=10, fill = '#22FD81' }) => {
+const Circle: React.FC<SVGProps> = ({width=10, height=10, fill }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
