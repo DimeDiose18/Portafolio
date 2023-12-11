@@ -31,7 +31,7 @@ const config: Config = {
       '5xl': '3.125rem',
     },
     screens: {
-      'mobile': '360px',
+      'mobile': '340px',
       'tablet': '768px',
       'laptop': '1024px',
       'desktop': '1280px',
