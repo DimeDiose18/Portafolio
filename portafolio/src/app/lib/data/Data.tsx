@@ -11,7 +11,9 @@ let SkillsData = [
   { id: 10, name: 'Zustand' },
   { id: 11, name: 'Material UI' },
   { id: 12, name: 'Express' },
-  { id: 13, name: 'Figma' }
+  { id: 13, name: 'Figma' },
+  { id: 14, name: 'Git' },
+  { id: 15, name: 'Tailwind' },
 ]
 
 
