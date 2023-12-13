@@ -1,5 +1,3 @@
-"use client";
-
 import { AboutMe } from './ui/components/AboutMe';
 import { ButtonContact } from './ui/components/ButtonContact';
 import { Form } from './ui/components/Form';
