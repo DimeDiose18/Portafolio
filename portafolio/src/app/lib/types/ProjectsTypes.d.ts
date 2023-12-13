@@ -5,4 +5,5 @@ export interface ProjectsTypes {
     myBg: string
     link: string
     top?: string | undefined;
+    tags: string[]
 }
