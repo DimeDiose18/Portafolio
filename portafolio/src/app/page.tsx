@@ -1,5 +1,8 @@
+"use client";
+
 import { AboutMe } from './ui/components/AboutMe';
 import { ButtonContact } from './ui/components/ButtonContact';
+import { Form } from './ui/components/Form';
 import { Projects } from './ui/components/Projects';
 import Skills from './ui/components/Skills';
 import { SocialNetworks } from './ui/components/SocialNetworks';
@@ -45,10 +48,23 @@ export default function Home() {
             <Circle fill='#FF9D5A' />
           </div>
         </div>
-
       </section>
       <section id='projects' className='w-[100%]'>
         <Projects />
+      </section>
+      <section id='arrow-titles-contact'>
+        <div className='flex justify-center my-14'>
+          <Arrow />
+        </div>
+        <div className='mb-3'>
+          <h1 className={`${ibmPlexMono.className} mobile:text-xl text-whity outline-4 font-outline-3 tracking-wide`}>Send me a message!</h1>
+          <div className='transform translate-x-[14rem] translate-y-[-0.90rem]'>
+            <Circle fill='#FC5A88' />
+          </div>
+        </div>
+      </section>
+      <section id='contact'>
+        <Form />
       </section>
 
     </main>

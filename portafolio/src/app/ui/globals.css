@@ -21,6 +21,18 @@
   .font-outline-3 {
     -webkit-text-stroke: 1px #1E1E1E;
   }
+  .input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+  .input-icon-2 {
+    position: absolute;
+    left: 10px;
+    top: 19px;
+    transform: translateY(-50%);
+    }
 }
 
 body {
