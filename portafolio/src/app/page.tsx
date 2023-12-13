@@ -1,5 +1,6 @@
 import { AboutMe } from './ui/components/AboutMe';
 import { ButtonContact } from './ui/components/ButtonContact';
+import { Footer } from './ui/components/Footer';
 import { Form } from './ui/components/Form';
 import { Projects } from './ui/components/Projects';
 import Skills from './ui/components/Skills';
@@ -11,7 +12,7 @@ import { Circle } from './ui/icons/Circle';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center mobile:p-10 p-14'>
+    <main className='flex min-h-screen flex-col items-center mobile:px-10 mobile:pt-10 pt-10 px-14'>
       <section id='titles'>
         <Title />
       </section>
@@ -63,6 +64,9 @@ export default function Home() {
       </section>
       <section id='contact'>
         <Form />
+      </section>
+      <section id='footer'>
+        <Footer />
       </section>
 
     </main>
