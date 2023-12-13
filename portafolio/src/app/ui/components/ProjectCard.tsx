@@ -3,9 +3,10 @@ import React from 'react'
 import { ArrowLink } from '../icons/ArrowLink'
 import { prompt } from '../fonts'
 import { ProjectsTypes } from '../../lib/types/ProjectsTypes'
+import { Button } from './Button'
 
 
-const ProjectCard: React.FC<ProjectsTypes> = ({ image, title, alt, myBg, link, top }) => {
+const ProjectCard: React.FC<ProjectsTypes> = ({ image, title, alt, myBg, link, top, tags }) => {
     
     return (
         <div className='flex flex-col items-center border-2 border-blacky border-b-4 border-r-4 rounded-md shadow absolute' style={{ top: `${top}`, backgroundColor: `${myBg}`}}>
@@ -17,7 +18,9 @@ const ProjectCard: React.FC<ProjectsTypes> = ({ image, title, alt, myBg, link, t
             </div>
             <Image width={400} height={400} className='rounded-sm p-2' key={title} src={image} alt={alt} />
             <div className='p-3'>
-                <p className='font-normal text-gray-700 '>E-commerce</p>
+              {tags.map((element, index) => (
+                <Button key={index}>{element}</Button>
+              ))}
             </div>
         </div>
     )

@@ -11,41 +11,46 @@ const Projects: React.FC = () => {
             title: 'Violett Store',
             alt: 'E-commerce Violett',
             myBg: '#FD68C4',
-            link: '#'
+            link: '#',
+            tags: ['Frontend']
         },
         {
             image: '/assets/Rickandmortypage.png',
             title: 'Rick and Morty',
             alt: 'App rick and morty',
             myBg: 'yellow',
-            link: '#'
+            link: '#',
+            tags: ['Frontend', 'UX/UI', 'Backend']
         },
         {
             image: '/assets/javaquizpage.png',
             title: 'Javascript Quizz',
             alt: 'A little quizz',
             myBg: 'orange',
-            link: '#'
+            link: '#',
+            tags: ['Frontend', 'States']
         },
         {
             image: '/assets/pokemonpage.png',
             title: 'Pokedex',
             alt: 'Pokemon web app',
             myBg: '#BE87F9',
-            link: '#'
+            link: '#',
+            tags: ['Frontend', 'UX/UI', 'DDBB', 'Backend']
         },
         {
             image: '/assets/page.png',
             title: 'HealTech',
             alt: 'Healtech web app',
             myBg: '#22FD81',
-            link: '#'
+            link: 'https://healtech.tech/',
+            tags: ['Frontend','UX/UI', 'Teamwork' ]
         },
     ]
 
-    const topValues = ['3.7rem', '23.2rem', '42.5rem', '64.3rem', '83.8rem']
+    const topValues = ['3.7rem', '23.2rem', '42.5rem', '63rem', '83.8rem']
 
-    const projectCards = myProjects.map(({image, title, alt, myBg, link}, index) => (
+    const projectCards = myProjects.map(({image, title, alt, myBg, link, tags}, index) => (
         <ProjectCard
         key={title.toLocaleLowerCase()}
         image={image}
@@ -53,7 +58,8 @@ const Projects: React.FC = () => {
         alt={alt}
         myBg={myBg}
         link={link}
-        top={topValues[index] || '0rem'} 
+        top={topValues[index] || '0rem'}
+        tags={tags}
     />
     ))
     
